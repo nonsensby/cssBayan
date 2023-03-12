@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../flag.jpg);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.bayan {
+    width: 1000px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) ;
+}
+
+
+.bayan-item {
+     color: #45161C;
+}
+
+.bayan-title {
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    transform: 0.3s all;
+    position: relative;
+    list-style-type: none;
+}
+.bayan-title:hover {
+    background-color: rgba(255, 194, 204, 0.3);
+}
+
+.bayan-title::after {
+    display: block;
+    content:'\261F' ;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bayan-item[open] .bayan-title::after {
+    content: '\274C';
+}
+
+.bayan-content {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bayan-content {
+    animation: show 2s ;
+    }
+
+
+@keyframes show {
+
+from {opacity: 0;} to {opacity: 1;}
+}
+
+.bayan-content  img {
+    max-width: 50%;
+    position: center;
+  }
+
+
