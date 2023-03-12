@@ -53,6 +53,10 @@ body {
     transform: translateY(-50%);
 }
 
+.bayan-item[open] .bayan-title::after {
+    content: '\274C';
+}
+
 
 
 
