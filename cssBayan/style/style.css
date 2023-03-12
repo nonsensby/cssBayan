@@ -9,6 +9,9 @@ body {
     background-size: 100%;
 }
 
+h1 {
+    font-size: 50px;
+}
 
 
 .wrapper {
@@ -27,21 +30,22 @@ body {
 
 
 .bayan-item {
-    color: blue;
+     color: #45161C;
 }
 
 .bayan-title {
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
     outline: none;
     cursor: pointer;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid black;
     transform: 0.3s all;
     position: relative;
+    list-style-type: none;
 }
 .bayan-title:hover {
-    background-color: aqua;
+    background-color: rgba(255, 194, 204, 0.3);
 }
 
 .bayan-title::after {
@@ -57,7 +61,26 @@ body {
     content: '\274C';
 }
 
+.bayan-content {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bayan-content {
+    animation: show 2s ;
+    }
 
 
+@keyframes show {
+
+from {opacity: 0;} to {opacity: 1;}
+}
+
+.bayan-content  img {
+    max-width: 50%;
+    position: center;
+  }
 
 
